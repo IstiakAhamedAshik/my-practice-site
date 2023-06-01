@@ -2,37 +2,46 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.car-section {
+  width: 300px;
+  border: 2px solid rgb(131, 93, 168);
+  padding: 5px;
+  border-radius: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.car-section img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid rgb(121, 95, 95);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.car-description {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 5px 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.car-description p {
+  font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.car-mother {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+.car-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.car-button button {
+  font-size: 15px;
+  background-color: chartreuse;
+  color: rgb(17, 17, 14);
+  padding: 8px 14px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
 }
