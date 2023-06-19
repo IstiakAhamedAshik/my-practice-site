@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './all.css'
 const AddUser = () => {
   const [users, setUsers] = useState({})
   const handleAddUser = (event) => {
@@ -32,35 +32,40 @@ const AddUser = () => {
   }
 
   return (
-    <div>
-      <h1>please add new user:</h1>
+    <div className='login-page'>
+      <h1 className='text-xl font-medium'>please add new Car:</h1>
       <div>
         <form onSubmit={handleAddUser}>
-          <input
-            onBlur={handaleInputBlur}
-            type='text'
-            name='name'
-            placeholder='enter your name'
-            required
-          />
-          <br />
-          <input
-            onBlur={handaleInputBlur}
-            type='text'
-            name='picture'
-            placeholder='enter your url'
-            required
-          />
-          <br />
-          <input
-            onBlur={handaleInputBlur}
-            type='text'
-            name='price'
-            placeholder='enter the price'
-            required
-          />
-          <br />
-          <input type='submit' value='AddUser' />
+          <div>
+            <input
+              onBlur={handaleInputBlur}
+              type='text'
+              name='name'
+              placeholder='Your car name'
+              required
+            ></input>
+          </div>
+          <div>
+            <input
+              onBlur={handaleInputBlur}
+              type='text'
+              name='picture'
+              placeholder='Car Url'
+              required
+            ></input>
+          </div>
+          <div>
+            <input
+              onBlur={handaleInputBlur}
+              type='text'
+              name='price'
+              placeholder='Give Price'
+              required
+            ></input>
+          </div>
+          <div>
+            <input className='login-btn' type='submit' value='ADD CAR' />
+          </div>
         </form>
       </div>
     </div>

@@ -26,7 +26,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Cars:{displayCar?.length}</h1>
+      <h1 className='text-2xl font-medium'>Cars: {displayCar?.length}</h1>
       <div className='car-mother'>
         {displayCar?.map((car) => (
           <ShowCar
