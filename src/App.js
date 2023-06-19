@@ -13,14 +13,16 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/product'),
+        loader: () => fetch('https://z-my-practice-crud.vercel.app/product'),
       },
       { path: '/adduser', element: <AddUser></AddUser> },
 
       {
         path: '/update/:id',
         loader: ({ params }) => {
-          return fetch(`http://localhost:5000/product/${params.id}`)
+          return fetch(
+            `https://z-my-practice-crud.vercel.app/product/${params.id}`
+          )
         },
         element: <UpdateUser></UpdateUser>,
       },
