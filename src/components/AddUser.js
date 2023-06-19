@@ -6,7 +6,7 @@ const AddUser = () => {
     event.preventDefault()
     console.log(users)
 
-    fetch('http://localhost:5000/product', {
+    fetch('https://z-my-practice-crud.vercel.app/product', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

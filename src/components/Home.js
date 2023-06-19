@@ -9,7 +9,7 @@ const Home = () => {
   const handaleDelete = (car) => {
     const aggre = window.confirm(`you want to delete, ${car.name}`)
     if (aggre) {
-      fetch(`http://localhost:5000/product/${car._id}`, {
+      fetch(`https://z-my-practice-crud.vercel.app/product/${car._id}`, {
         method: 'DELETE',
       })
         .then((res) => res.json())

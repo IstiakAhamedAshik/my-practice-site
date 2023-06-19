@@ -7,7 +7,7 @@ const UpdateUser = () => {
   const [users, setUsers] = useState(product)
   const handleAddUser = (event) => {
     event.preventDefault()
-    fetch(`http://localhost:5000/product/${product._id}`, {
+    fetch(`https://z-my-practice-crud.vercel.app/product/${product._id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',
